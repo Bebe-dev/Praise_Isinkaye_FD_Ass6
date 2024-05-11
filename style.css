@@ -1,0 +1,107 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+  }  
+body{
+    background-color: #0D0714;
+    padding: 3rem;
+}
+input{
+    padding: 13px;
+    border: #3E1671 1px solid;
+    border-radius: 10px;
+    background-color: transparent;
+    width: 100%;
+    color: #9E78CF;
+    font-size: 14px;
+}
+.image{
+    border-radius: 10px;
+    background-color: #9E78CF;
+    padding: 10px 12px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.image:hover{
+    background-color: #3E1671;
+}
+.input-div{
+    display: flex;
+    gap: 8px;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 40px;
+}
+#tasks{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    justify-content: center;
+    align-items: start;
+    color: #9E78CF;
+    margin-bottom: 3rem;
+}
+.task{
+    display: flex;
+    gap: 7rem;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    border-radius: 10px;
+    background-color: #15101C;
+    padding: 1.7rem 1.5rem;
+}
+/* .task-info{
+    text-decoration: line-through;
+} */
+.actions{
+    display: flex;
+    gap: 1.5rem;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+#checkList{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    justify-content: center;
+    align-items: start;
+    color: #78CFB0;
+}
+.check-item{
+    display: flex;
+    gap: 7rem;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+.done-par, .task-par{
+    display: none;
+    color: white;
+    font-size: 18px;
+    text-align: start;
+    margin-bottom: 1rem;
+}
+
+
+
+@media screen and (min-width: 900px) {
+    body{
+      padding: 5rem;
+    }
+    input{
+        width: 33%;
+    }
+    .task{
+        width: 38%;
+    }
+    #tasks, #checkList{
+        align-items: center;
+    }
+    .done-par, .task-par{
+        width: 68%;
+        text-align: center;
+    }
+}

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TO-DO LIST</title>
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+  <div class="input-div">
+    <input placeholder="Add a new task" id="new-task"/>
+    <img src="images/Plus image.png" alt="add" onclick="addNewTask()" class="image"/>
+  </div> 
+  
+  <p class="task-par">Tasks - <span class="task-count">0</span></p>
+  <div id="tasks">
+    
+    <!-- <div class="task">
+        <p class="task-info">my new task</p>
+        <div class="actions">
+            <img src="images/check.png" alt="check"/>
+            <img src="images/delete.png" alt="delete"/>
+        </div>
+    </div> -->
+  </div>
+
+  <p class="done-par">Done - <span class="check-count"></span></p>
+  <div id="checkList">
+    <!-- <div class="check-item">
+        <p class="done-info">done task</p>
+        <img src="images/revert.png" alt="revert"/>
+    </div> -->
+  </div>
+  
+  <script src="main.js"></script>
+</body>
+</html>
